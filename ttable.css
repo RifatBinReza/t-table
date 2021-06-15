@@ -1,0 +1,120 @@
+/**
+ * @author Rifat Bin Reza <rifatbinreza@gmail.com>
+ * version: 0.3
+ * https://github.com/RifatBinReza/t-table/
+ */
+
+body {
+	background-color: #f5f8fb;
+	font-family: 'Lato', sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	-webkit-box-shadow: #e2e2e2 0 10px 20px;
+	-moz-box-shadow: #e2e2e2 0 10px 20px;
+	box-shadow: #e2e2e2 0 10px 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.table-container {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	width: 900px;
+}
+
+.r-thead-tr-th {
+	font-weight: 700;
+}
+
+.r-thead-tr {
+	background-color: #f9f9f9;
+}
+
+.r-tbody {
+	/*transition: opacity 1000ms;
+    will-change: opacity;*/
+}
+
+.r-fade-in {
+	/*opacity: 0;*/
+}
+
+.r-tbody-tr:hover {
+	background-color: #f9f9f9;
+}
+
+.r-tbody-tr {
+	background-color: #fff;
+	border-bottom: 3px solid #eff2f7;
+}
+
+.r-tbody-tr:last-of-type {
+	border-bottom: none;
+}
+
+.r-thead-tr-th, .r-tbody-tr-td, .r-tfoot-tr-th {
+	padding: 12px 25px;
+	text-align: left;
+	/*width: 1%;*/
+	overflow: hidden;
+	border-collapse: collapse;
+}
+
+.r-thead-tr-th {
+	/*width: 20%;*/
+}
+
+.r-text-right {
+	text-align: right;
+}
+
+.r-footer-controller {
+	margin: 0 auto;
+}
+
+.r-pagination-ul {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	cursor: default;
+}
+
+.r-pagination-ul > li {
+	display: inline;
+}
+
+.r-pagination-ul > li > a {
+	text-decoration: none;
+	color: unset;
+	font-weight: 700;
+	padding: 5px 10px;
+	margin: 5px;
+	cursor: pointer;
+	-webkit-box-shadow: #e2e2e2 0 10px 20px;
+	-moz-box-shadow: #e2e2e2 0 10px 20px;
+	box-shadow: #e2e2e2 0 10px 20px;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+}
+
+.box {
+	display: table;
+	margin: 0 auto;
+}
+
+.r-disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.r-selected {
+	background-color: #dcdada!important;
+	-webkit-box-shadow: inset #e2e2e2 0 10px 20px!important;
+	-moz-box-shadow: inset #e2e2e2 0 10px 20px!important;
+	box-shadow: inset #e2e2e2 0 10px 20px!important;
+}

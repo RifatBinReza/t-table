@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>T-Table</title>
+  <meta name="description" content="T-table.js">
+  <meta name="author" content="rifatbinreza">
+
+  <link rel="stylesheet" href="ttable.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<p id="main">
+	</p>
+	<div class="box">
+		<table id="tea-table"></table>
+	</div>
+  <script src="DataProcessor.js"></script>
+  <script src="Renderer.js"></script>
+  <script src="Events.js"></script>
+  <script src="ttable.js"></script>
+  <script type="text/javascript">
+  	let table = new TTable('tea-table', {
+  		data: arrayData,
+  		columns: [
+			{name: "Name", sortable: true, render: function (data, row) {
+				return data+' modified';
+			}},
+			{name: "Designation"},
+			{name: "City"},
+			{name: "Postal"},
+			{name: "Start date"},
+			{name: "Salary", render: function (data, row) {
+				return `<b>${data}.0</b>`
+			}}
+		],
+		rowPerPage: 5,
+		currentPageNumber: 0,
+		footer: [
+			// {colspan: 5, rowspan: 1, text: 'Total'},
+			// {colspan: 1, rowspan: 1, text: '$2,120,754', render: function (pageData) {
+			// 	let total = 0;
+			// 	pageData.forEach(function (data) {
+			// 		let numb = data[5].match(/\d/g);
+			// 		numb = numb.join("");
+			// 		total+=parseInt(numb);
+			// 	})
+			// 	return '$'+total+'.00';
+			// }}
+		]
+  	});
+  	table.init();
+  </script>
+</body>
+</html>
