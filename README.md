@@ -1,4 +1,4 @@
-# T-Table (A tiny js table with no dependency)
+# [T-Table](https://rifatbinreza.github.io/t-table/) (A tiny js table with no dependency)
 
 ## LICENSE
 
