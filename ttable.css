@@ -36,12 +36,10 @@ table {
 }
 
 .r-tbody {
-	/*transition: opacity 1000ms;
-    will-change: opacity;*/
+	
 }
 
 .r-fade-in {
-	/*opacity: 0;*/
 }
 
 .r-tbody-tr:hover {
@@ -60,13 +58,11 @@ table {
 .r-thead-tr-th, .r-tbody-tr-td, .r-tfoot-tr-th {
 	padding: 12px 25px;
 	text-align: left;
-	/*width: 1%;*/
 	overflow: hidden;
 	border-collapse: collapse;
 }
 
 .r-thead-tr-th {
-	/*width: 20%;*/
 }
 
 .r-text-right {
